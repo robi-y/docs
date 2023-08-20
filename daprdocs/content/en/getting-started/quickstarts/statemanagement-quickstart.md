@@ -416,7 +416,7 @@ The `order-processor` service writes, reads, and deletes an `orderId` key/value 
 
 ```java
 try (DaprClient client = new DaprClientBuilder().build()) {
-  for (int i = 1; i <= 10; i++) {
+  for (int i = 1; i <= 100; i++) {
     int orderId = i;
     Order order = new Order();
     order.setOrderId(orderId);
